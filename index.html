@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>SF Building Mapathon</title>
+<style>
+
+
+body, section {
+  background-color: #bc4146;
+  color: white;
+}
+
+section {
+  padding: 2em;
+  font-family: "Roboto", sans-serif;
+}
+
+a:link,
+a:visited {
+  color: #eee;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section img {
+  height:80%;
+}
+
+</style>
+
+<section style="padding-top:5em;">
+  <p style="font-size:150%;font-weight:500"><b><a href="https://">Maptime SF/OAK</a></b>
+  <p><b>Mapping San Francisco Buildings</b>
+  <p>March 14, 2017
+  <p>This presentation: <a href="https://github.com/bdon/maptime_sf_buildings">github.com/bdon/maptime_sf_buildings</a>
+  <img src="images/profile.png" style="height:auto;width:100%;margin-top:90px"></img>
+</section>
+
+<section style="padding:5em 9em;">
+  <p style="font-size:300%;line-height:1.2em;font-weight:500">Why map buildings?</p>
+</section>
+
+<section>
+  Location context
+</section>
+
+<section>
+  <a href="http://tasks.hotosm.org/project/611">2014 Gaza Strip mapping - Humanitarian OpenStreetMap Team (HOT)</a>
+  <img src="images/gaza_tm.png"></img>
+</section>
+
+<section>
+  Urban planning, GIS analysis...
+  NYtimes
+  <img src="images/nytimes_buildings.png"></img>
+  source: https://www.nytimes.com/interactive/2016/12/21/upshot/Mapping-the-Shadows-of-New-York-City.html
+</section>
+
+<section style="text-align:center;padding-top:5em;">
+  <p>Why bother? Isn't Google Maps/Apple Maps good enough?</p>
+  <img src="images/GoogleMaps.png"></img>
+  https://www.google.com/maps/@37.776596,-122.4183656,17.08z
+  screenshot
+</section>
+
+<section style="text-align:center;padding-top:5em;">
+  <a href="https://www.openstreetmap.org/about">OpenStreetMap is open data. you are free to use it for any purpose as long as you credit OpenStreetMap and its contributors.</a>
+  Licensed under <a href="https://opendatacommons.org/licenses/odbl/">Open database license (ODbL)</a>
+</section>
+
+<section style="background:url(images/OsmUsers.png);background-size:cover;">
+</section>
+
+<section>
+  <a href="Vacant New York">http://www.vacantnewyork.com</a>
+  <img src="images/vacantnewyork.png"></img>
+</section>
+
+<section>
+  <a href="https://www.openstreetmap.org/edit#map=18/37.77747/-122.41710">How can we LOOK at buildings (2D and 3D) in OSM?</a>
+  <img src="images/BillGrahamAuditorium.png"></img>
+</section>
+
+<section style='font-size:200%'>
+OSM 3D renderers:
+  <ul>
+    <li><a href="https://www.mapbox.com/mapbox-gl-js/examples/">MapboxGL</a></li>
+    <li><a href="https://mapzen.com/tangram/play">Mapzen Tangram</a></li>
+    <li><a href="https://osmbuildings.org">OSMBuildings</a></li>
+  </ul>
+</section>
+
+<section style="background:url(images/WarsawNationalStadium.jpg);background-size:cover;font-size:50%">
+  <a href="https://www.openstreetmap.org/#map=17/52.23948/21.04560">Warsaw National Stadium on OSM</a><br/>
+  Credit: Wistula - Own work, File:Wał_MiedzeszyńskiNationalStadium.JPG
+</section>
+
+<section style="background:url(images/San_Francisco_City_Hall_as_seen_from_100_Van_Ness_at_dusk.jpg);background-size:contain;font-size:50%;">
+  <a href="https://osmbuildings.org/?lat=37.77927&lon=-122.41926&zoom=18&rotation=0&tilt=30">SF City Hall</a><br/>
+  <a href="https://en.wikipedia.org/wiki/San_Francisco_City_Hall#/media/File:San_Francisco_City_Hall_as_seen_from_100_Van_Ness_at_dusk.jpg">Credit: Dllu - Own work, File:San_Francisco_City_Hall_as_seen_from_100_Van_Ness_at_dusk.jpg</a>
+</section>
+
+<section>
+  Let's improve:
+  <a href="https://mapzen.com/tangram/view/?scene=https://mapzen.com/api/scenes/80/357/resources/basic.yaml#14.0250/37.7798/-122.4152">The state of San Francisco data</a>
+</section>
+
+<section>
+  What tools can we use?
+  Measuring a building
+  2 meters....
+  Satellite tracing...
+</section>
+
+<section>
+  Public data
+  https://data.sfgov.org
+  <a href="https://data.sfgov.org/Housing-and-Buildings/Building-Footprints/6p33-sdua">https://data.sfgov.org/Housing-and-Buildings/Building-Footprints/6p33-sdua</a>
+</section>
+
+<section>
+  What the license means... don't trace other maps! 
+  Use provided satellite imagery, your own photos...
+</section>
+
+<section>
+  What makes OSM data reliable?
+  Tradeoffs between remote mapping, import mapping, hand mapping
+</section>
+
+<section>
+  Community buy-in... 
+  Wiki...Mailing lists
+</section>
+
+<section>
+  Let's make an edit!
+  Nodes? Ways? Tags?
+  (Takuya Japanese Style Hot Dog and Bowl)
+</section>
+
+<section>
+  Coordinating Users with:
+  OSM Tasking Manager: <a href="http://tasks.openstreetmap.us">tasks.OSM.us</a>, <a href="http://tasks.hotosm.org">tasks.HOTOSM.org</a>
+  OSM Wiki <a href="https://wiki.openstreetmap.org/wiki/Key:building">Key:building</a>
+</section>
+
+<section>
+  Leaving a paper trail:
+  <ul>
+    <li>Changeset comments</li>
+    <li>Changeset data source</li>
+    <li>Usernames</li>
+  </ul>
+</section>
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="lib/stack.v1.min.js"></script>
+<script>
+var mystack = stack();
+</script>
